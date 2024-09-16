@@ -7,7 +7,27 @@
 body {
     padding: 0;
     margin: 0;
-    background: linear-gradient(to right, #afaeae, #c0bbbb);
+    background: linear-gradient(to right, #393838, #2e2e2e);
+}
+
+.output {
+    background-color: rgba(0, 0, 0, .75);
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    min-width: 400px;
+    max-width: 400px;
+    min-height: 100px;
+}
+
+.output .display {
+    font-size: 2.5rem;
+    text-align: right;
 }
 
 .calculator-container {
@@ -33,35 +53,108 @@ body {
 .controls > button {
     cursor: pointer;
     font-size: 2rem;
-    border: 1px solid #ffffff;
+    border: 1px solid rgba(0, 0, 0, .75);
+    color: #ffffff;
+    background-color: #222222;
     outline: none;
 }
 
 .controls > button:hover {
-    background-color: rgba(255, 255, 255, .9);
+    background-color: rgba(0, 0, 0, .9);
 }
 
 .span-two {
     grid-column: span 2;
 }
 
-.output {
+/*Light Theme styles*/
+
+.light-theme  body{
+    background: linear-gradient(to right, #afaeae, #c0bbbb);
+}
+
+.light-theme .output {
+    background-color: rgba(255, 255, 255, .75);
+    color: black;
+}
+
+.light-theme .controls {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.light-theme .theme-toggle {
+    background-color: rgba(255, 255, 255, .75);
+}
+
+.light-theme .checkbox-label {
+    background-color: #ffffff;
+    border: 1px solid #111111;
+}
+
+.light-theme .checkbox-label .ball {
+    background-color: #111111;
+}
+
+.light-theme .output .display {
+    color: #111111;
+}
+
+.light-theme .controls > button:hover {
+    background-color: rgba(255, 255, 255, .9);
+}
+
+.light-theme .controls > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid #ffffff;
+    outline: none;
+    color: #111111;
+    background-color: rgba(255, 255, 255, .75);
+}
+
+/*Theme toggle styles*/
+
+.theme-toggle {
+    padding: 5px;
     background-color: rgba(0, 0, 0, .75);
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-    flex-direction: column;
-    padding: 10px;
-    word-wrap: break-word;
-    word-break: break-all;
     border-radius: 10px 10px 0 0;
     min-width: 400px;
     max-width: 400px;
-    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
-.output .display {
-    color: white;
-    font-size: 2.5rem;
-    text-align: right;
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox-label {
+    background-color: #111;
+    border: 1px solid #ffffff;
+    width: 50px;
+    height: 26px;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkbox-label .ball {
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+    transform: translateX(24px);
 }
