@@ -45,6 +45,7 @@ function chooseOperation(op) {
     return;
   }
   console.log();
+
   if (op === '%') {
     currentOperand = percentage(currentOperand);
     return;
