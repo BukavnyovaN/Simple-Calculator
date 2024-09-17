@@ -1,18 +1,20 @@
+@import './variables.css';
+
 *, *::before, *::after {
     box-sizing: border-box;
-    font-family: Gotham Rounded, sans-serif;
-    font-weight: normal;
+    font-family: var(--font-family), sans-serif;
+    font-weight: var(--font-weight);
 }
 
 body {
     padding: 0;
     margin: 0;
-    background: linear-gradient(to right, #393838, #2e2e2e);
+    background: var(--dark-bg-gradient);
 }
 
 .output {
-    background-color: rgba(0, 0, 0, .75);
-    color: white;
+    background-color: var(--output-bg-dark);
+    color: var(--output-text-dark);
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
@@ -45,7 +47,7 @@ body {
     align-content: center;
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(120px, auto) repeat(4, 100px);
-    background-color: rgba(255, 255, 255, .75);
+    background-color: var(--output-bg-light);
     border-radius: 0 0 10px 10px;
     overflow: hidden;
 }
@@ -53,70 +55,47 @@ body {
 .controls > button {
     cursor: pointer;
     font-size: 2rem;
-    border: 1px solid rgba(0, 0, 0, .75);
-    color: #ffffff;
-    background-color: #222222;
+    border: var(--button-border-dark);
+    color: var(--output-text-dark);
+    background-color: var(--button-bg-dark);
     outline: none;
 }
 
 .controls > button:hover {
-    background-color: rgba(0, 0, 0, .9);
+    background-color: var(--button-hover-dark);
 }
 
 .span-two {
     grid-column: span 2;
 }
 
-/*Light Theme styles*/
-
-.light-theme  body{
-    background: linear-gradient(to right, #afaeae, #c0bbbb);
-}
-
-.light-theme .output {
-    background-color: rgba(255, 255, 255, .75);
-    color: black;
-}
-
-.light-theme .controls {
-    background-color: rgba(0, 0, 0, .1);
+/* Light Theme Styles */
+.light-theme {
+    --dark-bg-gradient: var(--light-bg-gradient);
+    --output-bg-dark: var(--output-bg-light);
+    --output-text-dark: var(--output-text-light);
+    --button-border-dark: var(--button-border-light);
+    --button-bg-dark: var(--button-bg-light);
+    --button-hover-dark: var(--button-hover-light);
 }
 
 .light-theme .theme-toggle {
-    background-color: rgba(255, 255, 255, .75);
+    background-color: var(--theme-toggle-bg-light);
 }
 
 .light-theme .checkbox-label {
-    background-color: #ffffff;
-    border: 1px solid #111111;
+    background-color: var(--checkbox-bg-light);
+    border: var(--checkbox-border-dark);
 }
 
 .light-theme .checkbox-label .ball {
-    background-color: #111111;
+    background-color: var(--checkbox-ball-light);
 }
 
-.light-theme .output .display {
-    color: #111111;
-}
-
-.light-theme .controls > button:hover {
-    background-color: rgba(255, 255, 255, .9);
-}
-
-.light-theme .controls > button {
-    cursor: pointer;
-    font-size: 2rem;
-    border: 1px solid #ffffff;
-    outline: none;
-    color: #111111;
-    background-color: rgba(255, 255, 255, .75);
-}
-
-/*Theme toggle styles*/
-
+/* Theme Toggle Styles */
 .theme-toggle {
     padding: 5px;
-    background-color: rgba(0, 0, 0, .75);
+    background-color: var(--theme-toggle-bg-dark);
     border-radius: 10px 10px 0 0;
     min-width: 400px;
     max-width: 400px;
@@ -131,8 +110,8 @@ body {
 }
 
 .checkbox-label {
-    background-color: #111;
-    border: 1px solid #ffffff;
+    background-color: var(--checkbox-bg-dark);
+    border: var(--button-border-light);
     width: 50px;
     height: 26px;
     border-radius: 50px;
@@ -145,7 +124,7 @@ body {
 }
 
 .checkbox-label .ball {
-    background-color: #fff;
+    background-color: var(--checkbox-ball-dark);
     width: 20px;
     height: 20px;
     position: absolute;

@@ -1,0 +1,24 @@
+/* variables.css */
+:root {
+    --font-family: 'Gotham Rounded', sans-serif;
+    --font-weight: normal;
+    --dark-bg-gradient: linear-gradient(to right, #393838, #2e2e2e);
+    --light-bg-gradient: linear-gradient(to right, #afaeae, #c0bbbb);
+    --button-hover-dark: rgba(0, 0, 0, .9);
+    --button-hover-light: rgba(255, 255, 255, .9);
+    --button-border-dark: 1px solid rgba(0, 0, 0, .75);
+    --button-border-light: 1px solid #ffffff;
+    --checkbox-border-dark: 1px solid #111111;
+    --button-bg-dark: #222222;
+    --button-bg-light: rgba(255, 255, 255, .75);
+    --output-bg-dark: rgba(0, 0, 0, .75);
+    --output-bg-light: rgba(255, 255, 255, .75);
+    --output-text-dark: #ffffff;
+    --output-text-light: #111111;
+    --theme-toggle-bg-dark: rgba(0, 0, 0, .75);
+    --theme-toggle-bg-light: rgba(255, 255, 255, .75);
+    --checkbox-bg-dark: #111111;
+    --checkbox-bg-light: #ffffff;
+    --checkbox-ball-dark: #ffffff;
+    --checkbox-ball-light: #111111;
+}
