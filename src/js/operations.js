@@ -6,7 +6,7 @@ export const multiply = (a, b) => Number(a) * Number(b);
 
 export const divide = (a, b) => {
   if (Number(b) === 0) {
-    throw new Error('Division by zero');
+    throw new Error('Can`t divide by zero');
   }
   return Number(a) / Number(b);
 };

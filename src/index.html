@@ -6,8 +6,7 @@
     <title>Calculator</title>
 </head>
 <body>
-
-<div class="calculator-container">
+    <div class="calculator-container">
         <div class='theme-toggle'>
             <div>🌞</div>
             <input type="checkbox" class="checkbox" id="checkbox">
@@ -41,5 +40,12 @@
             <button>=</button>
         </div>
     </div>
+    <dialog id="errorDialog">
+        <div class="errorDialogTitle">
+            <p>An error has occurred:</p>
+            <button id="closeDialogBtn">&#10006;</button>
+        </div>
+        <p id="errorMessage"></p>
+    </dialog>
 </body>
 </html>

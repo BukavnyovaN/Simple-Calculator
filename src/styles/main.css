@@ -137,3 +137,28 @@ body {
 .checkbox:checked + .checkbox-label .ball {
     transform: translateX(24px);
 }
+
+/*Dialog styles*/
+#errorDialog {
+    width: 35%;
+    border: none;
+    border-radius: 10px;
+    background-color: #d8576f;
+}
+
+.errorDialogTitle {
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.errorDialogTitle p {
+    margin: 0;
+}
+
+#closeDialogBtn {
+    border: none;
+    border-radius: 15px;
+}
