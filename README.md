@@ -1,5 +1,7 @@
 # Simple-Calculator
 
+## DEPLOYMENT: https://bukavnyovan.github.io/Simple-Calculator/
+
 ## TASK : https://docs.google.com/document/d/1zpXXeSae-BlcxPKgw3DhxZA92cspVailrPYoaXSYrW8/edit?usp=sharing
 
 ## How to Run the App
