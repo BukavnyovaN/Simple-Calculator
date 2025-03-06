@@ -2,8 +2,6 @@
 
 ## DEPLOYMENT: https://bukavnyovan.github.io/Simple-Calculator/
 
-## TASK : https://docs.google.com/document/d/1zpXXeSae-BlcxPKgw3DhxZA92cspVailrPYoaXSYrW8/edit?usp=sharing
-
 ## How to Run the App
 
 Follow these steps to clone the repository, install dependencies, and build the project:
